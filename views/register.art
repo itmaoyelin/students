@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息注册</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>学生档案</h2><br>
+        <div class="form">
+            <form id="forms" action='/admin/register' method='post'>
+                <div class="form-group">
+                    <label>姓名:</label><br>
+                    <input type="text" placeholder="请输入姓名" name="username">
+                </div>
+                <div class="form-group">
+                    <label>年龄:</label><br>
+                    <input type="text" placeholder="请输入年龄" name="age">
+                </div>
+                <div class="box">
+                    <label>性别：</label>
+                    <input type="radio" name="sex" value="男">男
+                    <input type="radio" name="sex" value="女">女
+                </div>
+                <div class="form-group">
+                    <label>邮箱地址:</label><br>
+                    <input type="text" placeholder="请输入邮箱地址" name="email">
+                </div>
+                <div class="box">
+                    <label>爱好：</label>
+                    <input type="checkbox" name="hobbies" value="敲代码">敲代码
+                    <input type="checkbox" name="hobbies" value="打篮球">打篮球
+                    <input type="checkbox" name="hobbies" value="睡觉">睡觉
+                </div>
+                <div class="box">
+                    <label>所属学院:</label><br>
+                    <select name="college" class="college">
+                        <option value="计科院">计科院</option>
+                        <option value="文学院">文学院</option>
+                        <option value="土木院">土木院</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>入学日期:</label><br>
+                    <input type="text" placeholder="年/月/日" name="enterdate">
+                </div>
+                <input type="submit" value="提交" class="submit">
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
