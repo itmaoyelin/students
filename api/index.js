@@ -1,1 +1,2 @@
-require('../app')
+
+module.exports=require('../app')

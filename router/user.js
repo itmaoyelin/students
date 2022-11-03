@@ -40,5 +40,7 @@ userRouter.get('/list', (req, res) => {
         res.send(html);
     })
 });
-
+userRouter.get('/test2', (req, res) => {
+    res.send('test2,OK')
+})
 module.exports = userRouter;
