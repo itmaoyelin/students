@@ -9,7 +9,10 @@ app.get('/api', (req, res) => {
   res.send('欢迎来到小毛接口服务')
 });
 app.get('/api/index', (req, res) => {
-  res.send('index打开了',req.query)
+  res.send({
+    msg: 'get请求成功',
+    data:req.query
+  })
 })
 app.post('/api/index', (req,res)=> {
   res.send({
