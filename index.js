@@ -20,10 +20,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //挂载一级路由
 app.use('/admin', userRouter);
 //挂载路由
-app.use('/mao', (req, res) => {
+app.get('/mao', (req, res) => {
     res.send('OK')
 })
+async function start() {
+    app.listen(3008, () => {
+        console.log('server runing at http://127.0.0.1:3008');
+    }) 
+}
 
-app.listen(3008, () => {
-    console.log('server runing at http://127.0.0.1:3008');
-})
+start()
