@@ -27,4 +27,3 @@ app.use('/mao', (req, res) => {
 app.listen(8001, () => {
     console.log('server runing at http://127.0.0.1:8001');
 })
-module.exports=app
